@@ -1,0 +1,546 @@
+/*Estilo geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.logo {
+    border-radius: 60px;
+    cursor: pointer;
+}
+
+header .logo:hover {
+    transform: scale(1.10);
+    box-shadow: 0px 0px 0px;
+}
+
+.flex {
+    display: flex;
+}
+
+.botao button {
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.botao button:hover,
+form .btn-enviar input:hover {
+    box-shadow: 0px 0px 8px #d6d6d6a2;
+    transform: scale(1.05);
+}
+
+h2.Titulo {
+    color: #fff;
+    font-size: 62px;
+    text-align: center;
+    padding: 40px;
+}
+
+h2.Titulo span {
+    color: rgb(20, 58, 230);
+}
+
+.btn-abrir-menu {
+    display: none;
+}
+
+/* Estilo do cabecalho */
+header {
+    padding: 45px 4%;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #ffffff54;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+header nav.Menu-Desktop a:hover {
+    color: #fff;
+    transform: scale(1.10);
+    transition: .2;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav.Menu-Desktop li {
+    display: inline-block;
+    padding: 40px;
+}
+
+/* ESTILO MENU MOBILE */
+.btn-abrir-menu i {
+    color: rgb(20, 58, 230);
+    font-size: 50px;
+
+}
+
+.menu-mobile {
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.menu-mobile.abrir-menu {
+    width: 58%;
+}
+
+.menu-mobile.abrir-menu~.overlay-menu {
+    display: block;
+}
+
+.menu-mobile .btn-fechar {
+    padding: 20px 4%;
+}
+
+.menu-mobile .btn-fechar i {
+    color: rgb(20, 58, 230);
+    font-size: 30px;
+}
+
+.menu-mobile nav ul {
+    text-align: right;
+}
+
+.menu-mobile nav ul li a {
+    color: #fff;
+    font: 20px;
+    font-weight: 300;
+    padding: 20px 10%;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover {
+    background-color: rgb(20, 58, 230);
+    color: #000000;
+
+}
+
+.overlay-menu {
+    background-color: #000000c0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
+/* Estilo topo site */
+section .topo-do-site {
+    position: fixed;
+    padding: 40px 4%;
+}
+
+section .topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 250px;
+}
+
+.topo-do-site h1 {
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site h1 span {
+    color: rgb(20, 58, 230);
+    font-size: 84px;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: #fff;
+    margin: 25px 0;
+    padding: 5px;
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: Flutuar 2s ease-in-out infinite alternate;
+}
+
+button.botao3 {
+    padding: 15px 40px;
+    font-weight: 600;
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+button.botao3:hover {
+    box-shadow: 0px 0px 8px #d6d6d6a2;
+    transform: scale(1.05);
+}
+
+button.botao3 a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #000000;
+}
+
+@keyframes Flutuar {
+    0% {
+        top: 0;
+
+    }
+
+    100% {
+        top: 20px;
+    }
+}
+
+/*Estilo sobre*/
+section.Sobre .flex {
+    margin-top: 10%;
+}
+
+section .sobre {
+    padding: 40px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.Sobre .txt-sobre {
+    color: #fff;
+    margin-top: 50px;
+    line-height: 40px;
+}
+
+.Sobre .txt-sobre h2 {
+    font-size: 45px;
+    margin-left: 10%;
+}
+
+.Sobre .txt-sobre h2 span {
+    display: block;
+    color: rgb(20, 58, 230);
+}
+
+.Sobre .txt-sobre p {
+    padding: 110px 10%;
+    font-size: 25px;
+}
+
+/*ESTILO PROJETOS */
+section.projetos .flex {
+    margin-top: 5%;
+}
+
+section.projetos {
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.192);
+}
+
+section.projetos p {
+    text-align: center;
+}
+
+section.projetos h2 span {
+    padding: 750px;
+}
+
+.projetos h2 {
+    font-size: 70px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+}
+
+a.btn-vermais button {
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+a.btn-vermais button:hover {
+    box-shadow: 0px 0px 8px #d6d6d6a2;
+    transform: scale(1.05);
+
+}
+
+/*estilo rodapé*/
+footer {
+    padding: 60px 4%;
+}
+
+.flex {
+    display: flex;
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+.btn-social button {
+    background-color: #000000;
+    border: #000000;
+    cursor: pointer;
+}
+
+.btn-social i {
+    background-color: #000000;
+}
+
+.btn-social a i {
+    color: rgb(20, 58, 230);
+    background-color: #000000;
+    font-size: 30px;
+}
+
+footer .line-footer p i {
+    color: rgb(20, 58, 230);
+    font-size: 25px;
+    text-align: center;
+}
+
+footer .line-footer p a {
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    justify-content: center;
+}
+
+footer.line-footer p {
+    text-align: center;
+}
+.btn-social a{
+    text-decoration: none;
+    color: white;
+}
+
+/* pagina 2 */
+h2.titulo2 {
+    color: #fff;
+    font-size: 50px;
+}
+
+h2.titulo2 span {
+    color: rgb(20, 58, 230);
+}
+
+section.projetos p img {
+    gap: 30px;
+}
+
+.line-footer {
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.btn-social {
+    background-color: rgb(0, 0, 0);
+    display: contents;
+}
+a button.botao3 {
+    background-color: #ffffff;
+    text-decoration: none;
+}
+.btn-social a{
+    text-decoration: none;
+    color: white;
+}
+
+/*Responsivo*/
+@media screen and (max-width: 780px) {
+    /*classe geral*/
+    *{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    .btn-abrir-menu {
+        display: block;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .topo-do-site,
+    .flex {
+        flex-direction: column-reverse;
+    }
+
+    h2.Titulo {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /* pagina 2*/
+    .interface img {
+        height: 75%;
+        width: 75%;
+    }
+
+    h2.titulo2 {
+        font-size: 15px;
+    }
+
+    /* cabecalho */
+
+    .Menu-Desktop,
+    .botao {
+        display: none;
+    }
+
+    /* topo do site */
+    section .topo-do-site .flex {
+
+        gap: 300px;
+    }
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    .topo-do-site h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .topo-do-site .img-topo-site img {
+        width: 100%;
+    }
+
+    /*sobre*/
+    section .sobre {
+        padding: 40px 8%;
+    }
+
+    .Sobre .txt-sobre h2 {
+        font-size: 30px;
+        text-align: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .img-sobre img {
+        padding: 40px;
+        border-radius: 100px;
+        width: 100%;
+    }
+
+    /*projetos */
+    span.cor {
+        color: rgb(20, 58, 230);
+    }
+
+    section.projetos {
+        padding: 30px 1%;
+    }
+    section.projetos h2{
+        font-size: 30px;
+    }
+
+    .img-port {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    section.Projetos .flex {
+        gap: 60px;
+        flex-direction: column;
+    }
+
+    /*rodapé*/
+    .btn-social i {
+        font-size: medium;
+        background-color: #000000;
+        color: rgb(0, 0, 0);
+    }
+
+    .btn-social button {
+        background-color: #000000;
+        border: #000000;
+        cursor: pointer;
+    }
+
+    footer .flex {
+        display: block;
+        justify-items: auto;
+    }
+
+    footer .line-footer p i {
+        font-size: 25px;
+        text-align: center;
+        color: rgb(20, 58, 230)
+    }
+    button.botao3 {
+        display: flex;
+        text-decoration: none;
+    }
+    a button.botao3 {
+        background-color: #ffffff;
+        text-decoration: none;
+    }
+    .line-footer a button.botao3 {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .btn-social a{
+        text-decoration: none;
+        padding-top: 35px;
+    }
+}
